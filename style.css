@@ -1,32 +1,81 @@
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111;
+    background-color: #fff;
+}
+
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #007acc;
-    color: white;
-    padding: 20px;
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #6c47ff;
+}
+
+/* Secciones */
+section {
+    padding: 60px 40px;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #111;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+section p {
+    font-size: 18px;
+    color: #444;
 }
 
-section {
-    padding: 20px;
+#projects {
+    background: linear-gradient(135deg, rgba(255,140,0,0.1), rgba(102,51,255,0.1));
+    border-radius: 12px;
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 800px;
 }
 
 footer {
-    background-color: #f2f2f2;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 40px;
+}
+
+.button {
+    background: linear-gradient(135deg, #ff8a00, #6c47ff);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #ff9d2f, #7a5cff);
 }
