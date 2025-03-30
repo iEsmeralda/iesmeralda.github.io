@@ -132,3 +132,11 @@ body {
   border-radius: 5px;
   display: inline-block;
 }
+
+.icon {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
