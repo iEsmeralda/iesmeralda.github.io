@@ -1,81 +1,132 @@
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #111;
-    background-color: #fff;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #222;
 }
 
-header {
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #eee;
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+/* Perfil */
+.profile {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-nav ul li a:hover {
-    color: #6c47ff;
+.profile h1 {
+  font-size: 28px;
+  margin: 10px 0 5px;
 }
 
-/* Secciones */
-section {
-    padding: 60px 40px;
-    text-align: center;
+.profile h2 {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
 }
 
-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #111;
+.location {
+  font-size: 14px;
+  color: #999;
 }
 
-section p {
-    font-size: 18px;
-    color: #444;
+.socials a {
+  margin: 0 6px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
 }
 
-#projects {
-    background: linear-gradient(135deg, rgba(255,140,0,0.1), rgba(102,51,255,0.1));
-    border-radius: 12px;
-    margin: 40px auto;
-    padding: 40px;
-    max-width: 800px;
+.bio {
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  color: #444;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #888;
-    border-top: 1px solid #eee;
-    margin-top: 40px;
+.skills {
+  margin-top: 20px;
 }
 
-.button {
-    background: linear-gradient(135deg, #ff8a00, #6c47ff);
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 24px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+.skills span {
+  background-color: #e1e7ff;
+  color: #333;
+  padding: 6px 10px;
+  margin: 4px;
+  border-radius: 6px;
+  font-size: 13px;
+  display: inline-block;
 }
 
-.button:hover {
-    background: linear-gradient(135deg, #ff9d2f, #7a5cff);
+/* Proyectos */
+.projects h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card h4 {
+  margin: 12px 16px 4px;
+  font-size: 18px;
+}
+
+.project-card .category {
+  margin: 0 16px;
+  font-size: 13px;
+  color: #777;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #444;
+  margin: 8px 16px 16px;
+}
+
+.tags {
+  margin: 0 16px 16px;
+}
+
+.tags span {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 4px 8px;
+  margin: 3px;
+  font-size: 12px;
+  border-radius: 5px;
+  display: inline-block;
 }
