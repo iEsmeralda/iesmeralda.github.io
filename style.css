@@ -185,3 +185,8 @@ body {
 .social-icon:hover {
   transform: scale(1.1);
 }
+
+.linkedin-icon {
+  width: 36px;
+  height: 36px;
+}
