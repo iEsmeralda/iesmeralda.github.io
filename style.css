@@ -140,3 +140,13 @@ body {
   margin-right: 6px;
 }
 
+.skills span {
+  font-weight: bold;
+}
+
+.gh-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-left: 6px;
+}
