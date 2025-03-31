@@ -33,8 +33,8 @@ body {
 }
 
 .skills span {
-   background-color: #e1e7ff;
-   color: #2566e3; 
+  background-color: #cbf8da;
+  color: #518b64;
    padding: 6px 10px;
    margin: 4px;
    border-radius: 6px;
@@ -45,8 +45,8 @@ body {
 
 /* ======== BOTÓN CV ======== */
 .cv-button {
-  background-color: #4f46e5;
-  color: white;
+  background-color: #97e9b2;
+  color: #3f8757;
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
@@ -260,8 +260,8 @@ body {
 }
 
 .contact-button {
-  background-color: #10b981;
-  color: white;
+  background-color: #97e9b2;
+  color: #3f8757;
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
