@@ -135,8 +135,8 @@ body {
 }
 
 .skills-tags span {
-  background-color: #e5e7fa;
-  color: #333;
+  background-color: #cbf8da;
+  color: #518b64;
   padding: 6px 10px;
   border-radius: 10px;
   font-size: 0.85rem;
@@ -204,7 +204,7 @@ body {
  .project-card .category {
    margin: 0 16px;
    font-size: 13px;
-   color: #777;
+   color: #518b64;
  }
  
  .project-card p {
@@ -220,8 +220,8 @@ body {
 
  
 .project-card .tags span {
-  background: #eef0fc;
-  color: #333;
+  background: #cbf8da;
+  color: #518b64;
   padding: 4px 10px;
   margin: 4px 6px 0 0;
   border-radius: 8px;
