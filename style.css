@@ -106,8 +106,16 @@ body {
 
 /* ======== REDES ======== */
 .socials {
-  margin: 1rem 0;
+  display: flex;
+  gap: 1rem; /* Espacio controlado entre íconos */
+  justify-content: center;
+  align-items: center;
 }
+
+.socials a {
+  display: inline-block;
+}
+
 
 .social-icon {
   width: 28px;
