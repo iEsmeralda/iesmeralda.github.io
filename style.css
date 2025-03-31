@@ -45,7 +45,7 @@ body {
 
 /* ======== BOTÓN CV ======== */
 .cv-button {
-  background-color: #97e9b2;
+  background-color: #d3f3e0;
   color: #3f8757;
   padding: 12px 20px;
   border-radius: 8px;
@@ -55,7 +55,7 @@ body {
 }
 
 .cv-button:hover {
-  background-color: #4338ca;
+  background-color: #8cc4a2;
 }
 
 /* ======== PERFIL ======== */
@@ -135,8 +135,8 @@ body {
 }
 
 .skills-tags span {
-  background-color: #cbf8da;
-  color: #518b64;
+  background-color: #377551;
+  color: #a0d4b6;
   padding: 6px 10px;
   border-radius: 10px;
   font-size: 0.85rem;
@@ -260,7 +260,7 @@ body {
 }
 
 .contact-button {
-  background-color: #97e9b2;
+  background-color: #d3f3e0;
   color: #3f8757;
   padding: 12px 20px;
   border-radius: 8px;
@@ -270,7 +270,7 @@ body {
 }
 
 .contact-button:hover {
-  background-color: #059669;
+  background-color: #8cc4a2;
 }
 
 
