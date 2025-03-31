@@ -34,22 +34,16 @@ body {
   padding-top: 2rem;
 }
 
-.skills-sidebar {
-  flex: 1;
-  background: #f9f9fc;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 2rem;
-  height: fit-content;
-}
-
-.skills-sidebar h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
+.skills span {
+   background-color: #e1e7ff;
+   color: #2566e3; 
+   padding: 6px 10px;
+   margin: 4px;
+   border-radius: 6px;
+   font-size: 13px;
+   display: inline-block;
+   font-weight: bold;  
+ }
 
 /* ======== BOTÓN CV ======== */
 .cv-button {
