@@ -8,100 +8,111 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <section class="profile">
-      <img src="icons/1725045315775.jpg" alt="Foto" class="avatar" />
-      <h1>Esmeralda López</h1>
-      <h2>Científica de Datos</h2>
-      <span class="location"><img src="icons/ubicacion.png" class="icon" alt="ubicación" />Ciudad de México, MX</span>
-      <br><br>
-      <div class="socials">
-        <a href="https://github.com/esme-lopezs" target="_blank">
-        <img src="icons/github.png" alt="GitHub" class="social-icon" />
-        </a>
-        <a href="https://www.linkedin.com/in/esmeralda-lopezs/" target="_blank">
-        <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon" />
-        </a>
-<!---->
-      </div>
+  <div class="layout">
 
-      <p class="bio">
-        Hola soy Esmeralda, una futura Científica de Datos en formación. Actualmente curso el séptimo semestre de Ciencia de Datos en la Escuela Superior de Cómputo y estoy en búsqueda de una oportunidad de medio tiempo para poner en práctica mis conocimientos y habilidades. Soy una persona curiosa y con muchas ganas de aprender y aportar valor, así que estoy lista para integrarme a un equipo donde pueda crecer y contribuir.
-      </p>
-      <div class="skills">
-        <span>Programación en SAS</span><span>Machine Learning</span><span>Python</span><span>SQL</span><span>R</span><span>PowerBI y Tableau</span><span>Procesamiento de Lenguaje Natural (PLN)</span>
-      </div>
-    </section>
+    <!-- LADO IZQUIERDO: Botón CV -->
+    <aside class="cv-sidebar">
+      <a href="cv_esmeralda.pdf" download class="cv-button">📄 Descargar CV</a>
+    </aside>
 
-<section class="skills">
-  <h2>Habilidades Técnicas</h2>
-  <div class="skills-grid">
-    <div class="skill">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-      <span>Python</span>
-    </div>
-    <div class="skill">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
-      <span>R</span>
-    </div>
-    <div class="skill">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL">
-      <span>SQL</span>
-    </div>
-    <div class="skill">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-original.svg" alt="Power BI">
-      <span>Power BI</span>
-    </div>
-    <div class="skill">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
-      <span>Jupyter</span>
-    </div>
-    <div class="skill">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-      <span>Git</span>
-    </div>
-  </div>
-</section>
+    <!-- CENTRO: Perfil + Proyectos -->
+    <div class="main-content">
+      <section class="profile">
+        <img src="icons/1725045315775.jpg" alt="Foto" class="avatar" />
+        <h1>Esmeralda López</h1>
+        <h2>Científica de Datos</h2>
+        <span class="location">
+          <img src="icons/ubicacion.png" class="icon" alt="ubicación" /> Ciudad de México, MX
+        </span>
+        <br><br>
+        <div class="socials">
+          <a href="https://github.com/esme-lopezs" target="_blank">
+            <img src="icons/github.png" alt="GitHub" class="social-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/esmeralda-lopezs/" target="_blank">
+            <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon" />
+          </a>
+        </div>
 
-    
-<section class="projects">
-  <h3>Proyectos</h3>
-  <div class="project-grid">
-
-    <div class="project-card">
-      <h4>Resumen Automático De Reseñas</h4>
-        <p class="category">
-          Procesamiento de Lenguaje Natural
+        <p class="bio">
+          Hola soy Esmeralda, una futura Científica de Datos en formación. Actualmente curso el séptimo semestre de Ciencia de Datos en la Escuela Superior de Cómputo y estoy en búsqueda de una oportunidad de medio tiempo para poner en práctica mis conocimientos y habilidades. Soy una persona curiosa y con muchas ganas de aprender y aportar valor, así que estoy lista para integrarme a un equipo donde pueda crecer y contribuir.
         </p>
 
-      <p>
-        En este proyecto, el objetivo fue generar resúmenes automáticos de reseñas de profesores en la Escuela Superior de Cómputo (ESCOM), utilizando datos de la plataforma MisProfesores.com con el fin de servir como herramienta de apoyo a los estudiantes.
-      </p>
-      <div class="tags">
-        <span><strong>PLN</strong></span>
-        <span><strong>LLM</strong></span>
-        <span><strong>BETO</strong></span>
-      </div>
+        <div class="skills-tags">
+          <span>Programación en SAS</span>
+          <span>Machine Learning</span>
+          <span>Python</span>
+          <span>SQL</span>
+          <span>R</span>
+          <span>PowerBI y Tableau</span>
+          <span>Procesamiento de Lenguaje Natural (PLN)</span>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h3>Proyectos</h3>
+        <div class="project-grid">
+
+          <div class="project-card">
+            <h4>Resumen Automático De Reseñas</h4>
+            <p class="category">Procesamiento de Lenguaje Natural</p>
+            <p>
+              En este proyecto, el objetivo fue generar resúmenes automáticos de reseñas de profesores en la Escuela Superior de Cómputo (ESCOM), utilizando datos de la plataforma MisProfesores.com con el fin de servir como herramienta de apoyo a los estudiantes.
+            </p>
+            <div class="tags">
+              <span><strong>PLN</strong></span>
+              <span><strong>LLM</strong></span>
+              <span><strong>BETO</strong></span>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <h4>Modelo Predictivo para Predicción De Robos En CDMX</h4>
+            <p class="category">Machine Learning</p>
+            <p>
+              En este proyecto, mi equipo y yo implementamos varios modelos para predecir el número de robos a transeúntes en distintas zonas de la Ciudad de México, utilizando datos históricos.
+            </p>
+            <div class="tags">
+              <span><strong>Modelado Predictivo</strong></span>
+              <span><strong>Machine Learning Supervisado</strong></span>
+              <span><strong>Hiperparámetros</strong></span>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
 
-    <div class="project-card">
-      <h4>Modelo Predictivo para Predicción De Robos En CDMX</h4>
-      <p class="category">
-        Machine Learning
-      </p>
-      <p>
-        En este proyecto, mi equipo y yo implementamos varios modelos para predecir el número de robos a transeúntes en distintas zonas de la Ciudad de México, utilizando datos históricos.
-      </p>
-      <div class="tags">
-        <span><strong>Modelado Predictivo</strong></span>
-        <span><strong>Machine Learning Supervisado</strong></span>
-        <span><strong>Hiperparámetros</strong></span>
+    <!-- LADO DERECHO: Habilidades Técnicas -->
+    <aside class="skills-sidebar">
+      <h2>Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <span>Python</span>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+          <span>R</span>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQL">
+          <span>SQL</span>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/powerbi/powerbi-original.svg" alt="Power BI">
+          <span>Power BI</span>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter">
+          <span>Jupyter</span>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+          <span>Git</span>
+        </div>
       </div>
-    </div>
-
-  </div>
-</section>
-
+    </aside>
 
   </div>
 </body>
