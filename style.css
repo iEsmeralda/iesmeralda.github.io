@@ -33,8 +33,8 @@ body {
 }
 
 .skills span {
-  background-color: #377551;
-  color: #a0d4b6;
+  background-color: #4a9b6c;
+  color: #dffcec;
    padding: 6px 10px;
    margin: 4px;
    border-radius: 6px;
@@ -135,8 +135,6 @@ body {
 }
 
 .skills-tags span {
-  background-color: #377551;
-  color: #a0d4b6;
   padding: 6px 10px;
   border-radius: 10px;
   font-size: 0.85rem;
