@@ -3,49 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google" content="notranslate" />
-  <title>Resumen de Reseñas</title>
+  <title>Resumen Automático de Reseñas</title>
   <link rel="icon" type="image/png" href="icons/esmeralda.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="navbar-buttons">
-        <a href="index.html" class="cv-button">⬅ Volver al inicio</a>
-      </div>
-    </div>
-  </nav>
-
-  <div class="layout">
-    <div class="main-content">
-      <section class="project-detail">
-        <h1>Resumen Automático De Reseñas</h1>
-        <p class="category">Procesamiento de Lenguaje Natural</p>
-
-        <p>
-          En este proyecto desarrollé un modelo que genera resúmenes automáticos de reseñas de profesores
-          utilizando datos de MisProfesores.com. Se aplicaron técnicas de PLN como tokenización, embeddings
-          y modelos preentrenados como BETO. El objetivo fue facilitar el análisis rápido de opiniones para
-          ayudar a los estudiantes en su toma de decisiones.
-        </p>
-
-        <h3>Tecnologías utilizadas</h3>
-        <ul>
-          <li>Python (NLTK, Transformers)</li>
-          <li>BETO (modelo preentrenado en español)</li>
-          <li>Scraping con BeautifulSoup</li>
-        </ul>
-
-        <h3>Resultado</h3>
-        <p>
-          Se logró un sistema funcional que condensa cientos de opiniones en resúmenes de calidad,
-          facilitando la exploración del contenido de reseñas largas.
-        </p>
-      </section>
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-buttons">
+      <a href="index.html" class="cv-button">⬅ Volver al inicio</a>
     </div>
   </div>
+</nav>
+
+<div class="layout">
+  <div class="main-content">
+    <section class="project-detail">
+      <h1>Resumen Automático de Reseñas</h1>
+      <p class="category">NLP · Procesamiento de Lenguaje Natural</p>
+
+      <p>
+        Este proyecto consistió en el desarrollo de un sistema capaz de generar resúmenes automáticos a partir de reseñas escritas por usuarios, aplicando técnicas de procesamiento de lenguaje natural. El objetivo fue facilitar la comprensión rápida de opiniones extensas sobre productos o servicios.
+      </p>
+
+      <h3>Objetivo</h3>
+      <p>
+        Diseñar un modelo que tome múltiples reseñas como entrada y produzca un resumen coherente y conciso, resaltando los aspectos más relevantes mencionados por los usuarios.
+      </p>
+
+      <h3>Herramientas y tecnologías</h3>
+      <ul>
+        <li>Python (pandas, nltk, spaCy, scikit-learn)</li>
+        <li>TF-IDF para extracción de características</li>
+        <li>Algoritmos de resumen extractivo y compresivo</li>
+        <li>Evaluación con métricas ROUGE y análisis cualitativo</li>
+        <li>Interfaz en Jupyter Notebook para pruebas interactivas</li>
+      </ul>
+
+      <h3>Resultados</h3>
+      <p>
+        El sistema fue capaz de generar resúmenes relevantes a partir de conjuntos de reseñas, logrando una buena cobertura de los puntos clave expresados por los usuarios. Se observó una mejora en la comprensión del contenido al reducir el volumen de texto hasta en un 70%, sin perder información esencial.
+      </p>
+
+      <h3>Aprendizajes</h3>
+      <p>
+        Este proyecto reforzó mis conocimientos en NLP, especialmente en técnicas de resumen automático y análisis de texto. También mejoré mis habilidades para evaluar modelos con métricas específicas del lenguaje natural y diseñar soluciones interpretables para usuarios finales.
+      </p>
+
+      <h3>Recursos</h3>
+      <ul>
+        <li><a href="https://github.com/esme-lopezs/Resumen-Automatico-de-Resenas" target="_blank">Repositorio en GitHub</a></li>
+      </ul>
+
+    </section>
+  </div>
+</div>
 
 </body>
 </html>
