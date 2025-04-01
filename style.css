@@ -47,7 +47,7 @@ body {
 /* ======== BOTÓN CV ======== */
 .cv-button {
   background-color: #9f85b7;
-  color: #4d3266;
+  color: #c5b3d6;
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
@@ -221,7 +221,7 @@ body {
  
 .project-card .tags span {
   background: #9f85b7;
-  color: #4d3266;
+  color: #c5b3d6;
   padding: 4px 10px;
   margin: 4px 6px 0 0;
   border-radius: 8px;
@@ -261,7 +261,7 @@ body {
 
 .contact-button {
   background: #9f85b7;
-  color: #4d3266;
+  color: #c5b3d6;
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
