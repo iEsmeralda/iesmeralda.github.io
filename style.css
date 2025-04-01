@@ -47,7 +47,7 @@ body {
 /* ======== BOTÓN CV ======== */
 .cv-button {
   background-color: #9f85b7;
-  color: #c5b3d6;
+  color: #ffffff;
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
@@ -56,7 +56,7 @@ body {
 }
 
 .cv-button:hover {
-  background-color: #8cc4a2;
+  background-color: #ffffff;
 }
 
 /* ======== PERFIL ======== */
@@ -204,7 +204,7 @@ body {
  .project-card .category {
    margin: 0 16px;
    font-size: 13px;
-   color: #518b64;
+   color: #602887;
  }
  
  .project-card p {
@@ -221,7 +221,7 @@ body {
  
 .project-card .tags span {
   background: #9f85b7;
-  color: #c5b3d6;
+  color: #ffffff;
   padding: 4px 10px;
   margin: 4px 6px 0 0;
   border-radius: 8px;
@@ -261,7 +261,7 @@ body {
 
 .contact-button {
   background: #9f85b7;
-  color: #c5b3d6;
+  color: #ffffff;
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
