@@ -34,7 +34,7 @@ body {
 }
 
 .skills span {
-  color: #d7bde0;
+  color: #e9ddf5;
   background-color: #4d3266;
    padding: 6px 10px;
    margin: 4px;
@@ -56,7 +56,7 @@ body {
 }
 
 .cv-button:hover {
-  background-color: #ffffff;
+  background-color: #795785;
 }
 
 /* ======== PERFIL ======== */
@@ -270,7 +270,7 @@ body {
 }
 
 .contact-button:hover {
-  background-color: #8cc4a2;
+  background-color: #795785;
 }
 
 
@@ -299,7 +299,7 @@ body {
 
 /* ======== NAVBAR ======== */
 .navbar {
-  background-color: #ffffff;
+  background-color: #e9ddf5;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   padding: 1rem 2rem;
   position: sticky;
