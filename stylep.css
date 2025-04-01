@@ -60,14 +60,14 @@
  /* Subtítulos */
  .project-detail h3 {
    margin-top: 1.5rem;
-   color: #4d3266;
+   color: #693a97;
  }
  
  /* Listas */
  .project-detail ul {
    padding-left: 1.5rem;
    list-style-type: disc;
-   color: #4d3266;
+   color: #693a97;
  }
  
  .project-detail ul li {
@@ -76,7 +76,7 @@
  
  /* Enlaces */
  .project-detail a {
-   color: #8c68af;
+   color: #693a97;
    font-weight: bold;
    text-decoration: none;
  }
@@ -97,7 +97,7 @@
   padding-left: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.5;
-  color: #4d3266;
+  color: #693a97;
 }
 
 .project-detail ul li::before {
@@ -105,7 +105,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #af8bd3; 
+  color: #693a97; 
   font-weight: bold;
   font-size: 1rem;
 }
