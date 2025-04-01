@@ -8,7 +8,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #5b1673;
+  /* background-color: #5b1673; */
 }
 
 /* ======== LAYOUT PRINCIPAL ======?== */
@@ -125,7 +125,7 @@ body {
   font-size: 1rem;
   margin: 1rem auto;
   max-width: 600px;
-  color: #F1F2F3;
+  color: #48145b;
 }
 
 .skills-tags {
@@ -260,8 +260,8 @@ body {
 }
 
 .contact-button {
-  background-color: #d3f3e0;
-  color: #3f8757;
+  background: #9f85b7;
+  color: #4d3266;
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
