@@ -16,7 +16,7 @@ body {
 
 .navbar-buttons .cv-button {
   background-color: #95d5b2;
-  color: #fff;
+  color: #2e7a50;
   padding: 0.6rem 1rem;
   text-decoration: none;
   border-radius: 8px;
@@ -47,12 +47,12 @@ body {
 /* Títulos y categorías */
 .project-detail h1 {
   font-size: 2rem;
-  color: #2d6a4f;
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
 .project-detail .category {
-  color: #40916c;
+  color: #000000;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
@@ -84,3 +84,30 @@ body {
 .project-detail a:hover {
   text-decoration: underline;
 }
+
+/* Viñetas personalizadas en listas */
+.project-detail ul {
+  list-style: none; /* Quitamos el estilo por defecto */
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.project-detail ul li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.project-detail ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #40916c; /* Verde suave */
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
