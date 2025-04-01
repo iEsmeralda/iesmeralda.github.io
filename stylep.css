@@ -15,8 +15,8 @@
  }
  
  .navbar-buttons .cv-button {
-   background-color: #95d5b2;
-   color: #1b652b;
+  background-color: #9f85b7;
+  color: #4d3266;
    padding: 0.6rem 1rem;
    text-decoration: none;
    border-radius: 8px;
@@ -47,12 +47,12 @@
  /* Títulos y categorías */
  .project-detail h1 {
    font-size: 2rem;
-   color: #2d6a4f;
+   color: #4d3266;
    margin-bottom: 0.5rem;
  }
  
  .project-detail .category {
-   color: #40916c;
+   color: #4d3266;
    font-weight: 600;
    margin-bottom: 1.5rem;
  }
@@ -60,14 +60,14 @@
  /* Subtítulos */
  .project-detail h3 {
    margin-top: 1.5rem;
-   color: #1b4332;
+   color: #4d3266;
  }
  
  /* Listas */
  .project-detail ul {
    padding-left: 1.5rem;
    list-style-type: disc;
-   color: #333;
+   color: #4d3266;
  }
  
  .project-detail ul li {
@@ -76,7 +76,7 @@
  
  /* Enlaces */
  .project-detail a {
-   color: #2f855a;
+   color: #8c68af;
    font-weight: bold;
    text-decoration: none;
  }
@@ -97,7 +97,7 @@
   padding-left: 2rem;
   margin-bottom: 0.75rem;
   line-height: 1.5;
-  color: #333;
+  color: #4d3266;
 }
 
 .project-detail ul li::before {
@@ -105,7 +105,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #40916c; /* Verde suave */
+  color: #af8bd3; 
   font-weight: bold;
   font-size: 1rem;
 }
