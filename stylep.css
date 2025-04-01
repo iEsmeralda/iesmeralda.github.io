@@ -9,7 +9,7 @@
  
  /* Navbar */
  .navbar {
-   background-color: #e4f7e8;
+   background-color: #e9ddf5;
    padding: 1rem 2rem;
    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
  }
@@ -47,12 +47,12 @@
  /* Títulos y categorías */
  .project-detail h1 {
    font-size: 2rem;
-   color: #4d3266;
+   color: #693a97;
    margin-bottom: 0.5rem;
  }
  
  .project-detail .category {
-   color: #4d3266;
+   color: #693a97;
    font-weight: 600;
    margin-bottom: 1.5rem;
  }
