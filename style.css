@@ -37,7 +37,7 @@ body {
 
 .location {
   display: inline-flex; align-items: center; gap: 6px;
-  font-size: 0.95rem; color: #6D64B5;
+  font-size: 0.95rem; color: #E5E4ED;
 }
 
 .location .icon { width: 16px; height: 16px; }
