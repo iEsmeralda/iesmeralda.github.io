@@ -106,7 +106,19 @@ body {
   margin: 4px 6px 0 0; border-radius: 8px; font-size: 0.8rem; display: inline-block;
 }
 
-/* ===== Responsive ===== */
+.skills-section {
+  margin-top: 1.5rem;
+  text-align: left; 
+}
+
+.skills-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #fff; 
+}
+
+
 @media (max-width: 900px) {
   .layout.two-col {
     grid-template-columns: 1fr;
