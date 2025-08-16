@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,102 +9,100 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!--
-<nav class="navbar">
-  <div class="navbar-container">
-    <div class="navbar-buttons">
-      <!-- <a href="icons/RESUME.pdf" download class="cv-button">Download CV</a>
-      <a href="mailto:esmeraldal.lopezs@gmail.com" class="contact-button">Contactar</a> 
-    </div>
-  </div>
-</nav>
-  !-->
-  
-  <div class="layout">
 
-    <!-- centro de la pagina --->
-    <div class="main-content">
+  <div class="layout two-col">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
       <section class="profile">
-        <img src="icons/1725045315775.jpg" alt="Foto" class="avatar" />
+        <img src="icons/1725045315775.jpg" alt="Profile photo" class="avatar" />
         <h1>Esmeralda López</h1>
         <span class="location">
-          <img src="icons/ubicacion.png" class="icon" alt="ubicación" /> Ciudad de México, MX
+          <img src="icons/ubicacion.png" class="icon" alt="location" /> Mexico City, MX
         </span>
-        <br><br>
-        <div class="socials">
-  <a href="https://github.com/iesmeralda" target="_blank">
-    <img src="icons/github.png" alt="GitHub" class="social-icon" />
-  </a>
-  <a href="https://www.linkedin.com/in/esmeralda-lopezs/" target="_blank">
-    <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon" />
-  </a>
-    <a href="https://huggingface.co/iEsmeralda" target="_blank">
-    <img src="icons/huggingface.png" alt="HuggingFace" class="social-icon" />
-  </a>
-</div>
 
-        <p class="bio">Hello, I'm Esmeralda. I'm studying Data Science at Escuela Superior de Cómputo, and I'm eager to apply my knowledge through real projects. You're welcome to explore my work!
+        <div class="socials">
+          <a href="https://github.com/iesmeralda" target="_blank" rel="noreferrer">
+            <img src="icons/github.png" alt="GitHub" class="social-icon" />
+          </a>
+          <a href="https://www.linkedin.com/in/esmeralda-lopezs/" target="_blank" rel="noreferrer">
+            <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon" />
+          </a>
+          <a href="https://huggingface.co/iEsmeralda" target="_blank" rel="noreferrer">
+            <img src="icons/huggingface.png" alt="HuggingFace" class="social-icon" />
+          </a>
+        </div>
+
+        <p class="bio">
+          Hello, I'm Esmeralda. I'm studying Data Science at Escuela Superior de Cómputo, and I'm eager to apply my knowledge through real projects. You're welcome to explore my work!
         </p>
 
-
         <div class="skills">
-         <span>Programación en SAS</span><span>Machine Learning</span><span>Python</span><span>SQL</span><span>R</span><span>PowerBI y Tableau</span><span>Procesamiento de Lenguaje Natural (PLN)</span>
-       </div>
-        
-      </section>
-
-      <section class="projects">
-        <h3>Proyectos</h3>
-        <div class="project-grid">
-<a href="resumen-resenas.html" class="project-link">
-          <div class="project-card">
-            <h4>Resumen Automático De Reseñas</h4>
-            <p class="category">Procesamiento de Lenguaje Natural</p>
-            <p>
-              En este proyecto, el objetivo fue generar resúmenes automáticos de reseñas de profesores en la Escuela Superior de Cómputo (ESCOM), utilizando datos de la plataforma MisProfesores.com con el fin de servir como herramienta de apoyo a los estudiantes.
-            </p>
-            <div class="tags">
-              <span><strong>PLN</strong></span>
-              <span><strong>LLM</strong></span>
-              <span><strong>BETO</strong></span>
-            </div>
-          </div>
-</a>
-    <a href="modelo-robos-cdmx.html" class="project-link">
-          <div class="project-card">
-            <h4>Modelo Predictivo para Predicción De Robos En CDMX</h4>
-            <p class="category">Machine Learning</p>
-            <p>
-              En este proyecto, mi equipo y yo implementamos varios modelos para predecir el número de robos a transeúntes en distintas zonas de la Ciudad de México, utilizando datos históricos.
-            </p>
-            <div class="tags">
-              <span><strong>Modelado Predictivo</strong></span>
-              <span><strong>Machine Learning Supervisado</strong></span>
-              <span><strong>Hiperparámetros</strong></span>
-            </div>
-          </div>
-      </a>
-
-          
-<a href="bi-project.html" class="project-link">
-<div class="project-card">
-  <h3>Proyecto con Power BI</h3>
-  <p class="category">Visualización de Datos</p>
-  <p>
-    Este proyecto utiliza Power BI para crear dashboards interactivos que faciliten el análisis de datos.
-    Más detalles serán añadidos próximamente.
-  </p>
-  <div class="tags">
-    <span><strong>Power BI</strong></span>
-    <span><strong>Visualización</strong></span>
-  </div>
-</div>
-  </a>
-          
+          <span>SAS Programming</span>
+          <span>Machine Learning</span>
+          <span>Python</span>
+          <span>SQL</span>
+          <span>R</span>
+          <span>Power BI &amp; Tableau</span>
+          <span>Natural Language Processing (NLP)</span>
         </div>
       </section>
-    </div>
+    </aside>
 
+    <!-- RIGHT CONTENT -->
+    <main class="content">
+      <section class="projects">
+        <h3>Portfolio</h3>
+        <div class="project-grid">
+
+          <a href="resumen-resenas.html" class="project-link">
+            <div class="project-card">
+              <h4>Automatic Review Summarization</h4>
+              <p class="category">Natural Language Processing</p>
+              <p>
+                In this project, the goal was to generate automatic summaries of professors’ reviews at the Escuela Superior de Cómputo (ESCOM), using data from the MisProfesores.com platform as a support tool for students.
+              </p>
+              <div class="tags">
+                <span><strong>NLP</strong></span>
+                <span><strong>LLM</strong></span>
+                <span><strong>BETO</strong></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="modelo-robos-cdmx.html" class="project-link">
+            <div class="project-card">
+              <h4>Predictive Model for Robberies in Mexico City</h4>
+              <p class="category">Machine Learning</p>
+              <p>
+                In this project, my team and I implemented several models to predict the number of robberies of pedestrians in different areas of Mexico City, using historical data.
+              </p>
+              <div class="tags">
+                <span><strong>Predictive Modeling</strong></span>
+                <span><strong>Supervised ML</strong></span>
+                <span><strong>Hyperparameters</strong></span>
+              </div>
+            </div>
+          </a>
+
+          <a href="bi-project.html" class="project-link">
+            <div class="project-card">
+              <h3>Power BI Project</h3>
+              <p class="category">Data Visualization</p>
+              <p>
+                This project uses Power BI to create interactive dashboards that make data analysis easier.
+                More details will be added soon.
+              </p>
+              <div class="tags">
+                <span><strong>Power BI</strong></span>
+                <span><strong>Visualization</strong></span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </section>
+    </main>
 
   </div>
 </body>
