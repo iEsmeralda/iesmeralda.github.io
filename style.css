@@ -7,9 +7,6 @@ body {
   color: #e6edf3;        
 }
 
-.h1 {
-  color: #e6edf3;
-}
 .layout.two-col {
   display: grid;
   grid-template-columns: 280px 1fr;
@@ -36,11 +33,11 @@ body {
   margin-bottom: 12px;
 }
 
-.profile h1 { font-size: 28px; margin: 8px 0 4px; color: #9C93EB; }
+.profile h1 { font-size: 28px; margin: 8px 0 4px; color: #e6edf3;; }
 
 .location {
   display: inline-flex; align-items: center; gap: 6px;
-  font-size: 0.95rem; color: #9ca3af;
+  font-size: 0.95rem; color: #A99CB5;
 }
 
 .location .icon { width: 16px; height: 16px; }
