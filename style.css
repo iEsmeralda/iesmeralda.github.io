@@ -56,7 +56,7 @@ body {
 .skills { margin-top: 10px; }
 .skills span {
   color: #ffffff;
-  background-color: #4d3266;
+  background-color: #403678;
   padding: 6px 10px;
   margin: 4px;
   border-radius: 6px;
@@ -102,7 +102,7 @@ body {
 
 .project-card .tags { margin-top: 10px; padding-bottom: 4px; }
 .project-card .tags span {
-  background: #9C93EB; color: #fff; padding: 4px 10px;
+  background: #6D64B5; color: #fff; padding: 4px 10px;
   margin: 4px 6px 0 0; border-radius: 8px; font-size: 0.8rem; display: inline-block;
 }
 
