@@ -1,14 +1,15 @@
-/* Reset & base */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: #0D1117;   /* dark background */
-  color: #e6edf3;        /* light text */
+  background: #0D1117;  
+  color: #e6edf3;        
 }
 
-/* ===== Two-column layout (sidebar left + content right) ===== */
+.h1 {
+  color: #e6edf3;
+}
 .layout.two-col {
   display: grid;
   grid-template-columns: 280px 1fr;
