@@ -12,7 +12,7 @@ body {
 }
 
 .navbar-buttons .cv-button {
-  background-color: #645AEB;
+  background-color: #6D64B5;
   color: #ffffff;
   padding: 0.6rem 1rem;
   text-decoration: none;
@@ -22,7 +22,7 @@ body {
 }
 
 .navbar-buttons .cv-button:hover {
-  background-color: #463FA1;
+  background-color: #403678;
 }
 
 .layout {
