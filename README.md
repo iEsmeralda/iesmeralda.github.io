@@ -1,5 +1,5 @@
-<div align="center">
-
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Now-6D64B5?style=for-the-badge)](https://iesmeralda.github.io)
-
-</div>
+<p align="center">
+  <a href="https://iesmeralda.github.io">
+    <img src="https://img.shields.io/badge/Visit%20My%20Portfolio-6D64B5?style=for-the-badge" alt="Portfolio"/>
+  </a>
+</p>
