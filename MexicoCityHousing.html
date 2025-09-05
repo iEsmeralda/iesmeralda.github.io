@@ -49,22 +49,6 @@
         <li>Modeling &amp; summaries: broom, base <code>lm()</code> for log-price regression</li>
       </ul>
 
-      <h3>Methodology</h3>
-      <ul>
-        <li><strong>Column curation:</strong> keep essential pricing, area, coordinates, and location fields; standardize names (e.g., <code>price_usd</code>).</li>
-        <li><strong>Sanity filters:</strong> drop unrealistic sizes (e.g., total or covered area &lt; 70 m²), enforce <em>covered ≤ total</em>, cap extreme prices (e.g., remove a 12.3M USD record at only 70 m²).</li>
-        <li><strong>IQR outlier removal:</strong> trim extreme total surface observations; apply floor for implausibly low prices.</li>
-        <li><strong>Consistency features:</strong> compute <code>price_usd_per_m2</code> and <code>covered_ratio</code>; flag size–price contradictions (very small &amp; very expensive, very large &amp; very cheap) and exclude them.</li>
-        <li><strong>Geocleaning:</strong> fix or drop a handful of mislocated points identified in the interactive map.</li>
-      </ul>
-
-      <h3>Exploratory Findings</h3>
-      <ul>
-        <li><strong>Prices (USD):</strong> right-skewed distribution on log scale; mid-market dominates roughly 50k–300k USD with a thinner luxury tail.</li>
-        <li><strong>Sizes:</strong> total area clusters around ~100 m²; heavy right tail with large outliers prior to cleaning.</li>
-        <li><strong>USD/m²:</strong> bulk between ~1,000 and 5,000 USD/m², median near ~2,000 USD/m²; outliers on both ends before cleaning.</li>
-      </ul>
-
       <h3>KPI Highlights by Borough</h3>
       <ul>
         <li><strong>Highest USD/m²:</strong> Miguel Hidalgo (~2,580 USD/m²) and Cuajimalpa (~2,220 USD/m²), reflecting premium zones like Polanco and Santa Fe.</li>
@@ -72,12 +56,6 @@
         <li><strong>Mid-range:</strong> Coyoacán, Magdalena Contreras, Tlalpan show moderate medians with wider dispersion.</li>
         <li><strong>More affordable:</strong> Iztapalapa, Tláhuac, Gustavo A. Madero around ~600–660 USD/m².</li>
       </ul>
-
-      <h3>Geospatial View</h3>
-      <p>
-        An interactive <em>leaflet</em> map colors listings by log(USD/m²), enabling inspection of local clusters and anomalies. 
-        Several misclassified points (e.g., borough mismatches at specific size–price pairs) were corrected or removed to improve spatial integrity.
-      </p>
 
       <h3>Modeling</h3>
       <p>
@@ -102,8 +80,7 @@
 
       <h3>Resources</h3>
       <ul>
-        <li>Code: R with tidyverse, janitor, ggplot2, patchwork, leaflet, broom, dplyr, scales, htmltools.</li>
-        <li>Artifacts: histograms/boxplots (log scale), borough KPI table &amp; ranking chart, interactive leaflet map, baseline log-price model summary.</li>
+        <li><a href="https://github.com/iEsmeralda/Mexico-City-Housing-Price" target="_blank">GitHub Repository</a></li>
       </ul>
 
     </section>
