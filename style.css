@@ -130,11 +130,12 @@ body {
   .profile { text-align: center; }
   .socials { justify-content: center; }
 }
-
+.project-card {
+  overflow: hidden;   
+}
 .project-image {
   width: 100%;        
   height: 160px;      
   object-fit: cover;  
   border-radius: 6px; 
   margin-bottom: 10px;}
-
