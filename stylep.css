@@ -100,14 +100,3 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); 
 }
 
-.img-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 18px;
-  margin: 20px 0;
-}
-.img-grid img {
-  max-width: 100%;
-  height: auto;
-}
-
