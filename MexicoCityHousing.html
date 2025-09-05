@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mexico City Housing Prices</title>
+  <link rel="icon" type="image/png" href="icons/favicon.ico" />
+  <link rel="stylesheet" href="stylep.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="navbar-container">
+    <div class="navbar-buttons">
+      <a href="index.html" class="cv-button">⬅ Back to Home</a>
+    </div>
+  </div>
+</nav>
+
+<div class="layout">
+  <div class="main-content">
+    <section class="project-detail">
+      <h1>Mexico City Housing Prices</h1>
+      <p class="category">Data Analysis · EDA · Linear Regression</p>
+
+      <p>
+        This project analyzes residential listings in Mexico City to understand price levels, size distributions, and spatial patterns. 
+        The workflow performs rigorous data cleaning, exploratory visualization, KPI aggregation by borough, geospatial mapping, and a baseline modeling step to explain prices from property attributes.
+      </p>
+
+      <h3>Objective</h3>
+      <p>
+        Build a clear, reliable view of the housing market in Mexico City by cleaning raw listings, removing unrealistic observations and outliers, 
+        summarizing key indicators (USD/m², price levels, stock), and modeling log-prices using structural features and location.
+      </p>
+
+      <h3>Dataset</h3>
+      <ul>
+        <li>CSV of listings with columns such as <em>property_type</em>, <em>places</em> (borough), <em>price_usd</em>, <em>surface_total_in_m2</em>, <em>surface_covered_in_m2</em>, <em>price_usd_per_m2</em>, <em>lat</em>, <em>lon</em>.</li>
+        <li>Initial shape inspection, summary statistics, and column pruning (e.g., removing <code>lat.lon</code>, currency fields, and derived duplicates).</li>
+      </ul>
+
+      <h3>Tools and Technologies</h3>
+      <ul>
+        <li>R (tidyverse, janitor, dplyr, ggplot2, patchwork)</li>
+        <li>Data quality &amp; cleaning: outlier treatment with IQR, logical filters, duplicate and NA checks</li>
+        <li>Visualization: histograms, boxplots (log scales), borough rankings</li>
+        <li>Geospatial: leaflet (CartoDB tiles, circle markers, legends)</li>
+        <li>Modeling &amp; summaries: broom, base <code>lm()</code> for log-price regression</li>
+      </ul>
+
+      <h3>Methodology</h3>
+      <ul>
+        <li><strong>Column curation:</strong> keep essential pricing, area, coordinates, and location fields; standardize names (e.g., <code>price_usd</code>).</li>
+        <li><strong>Sanity filters:</strong> drop unrealistic sizes (e.g., total or covered area &lt; 70 m²), enforce <em>covered ≤ total</em>, cap extreme prices (e.g., remove a 12.3M USD record at only 70 m²).</li>
+        <li><strong>IQR outlier removal:</strong> trim extreme total surface observations; apply floor for implausibly low prices.</li>
+        <li><strong>Consistency features:</strong> compute <code>price_usd_per_m2</code> and <code>covered_ratio</code>; flag size–price contradictions (very small &amp; very expensive, very large &amp; very cheap) and exclude them.</li>
+        <li><strong>Geocleaning:</strong> fix or drop a handful of mislocated points identified in the interactive map.</li>
+      </ul>
+
+      <h3>Exploratory Findings</h3>
+      <ul>
+        <li><strong>Prices (USD):</strong> right-skewed distribution on log scale; mid-market dominates roughly 50k–300k USD with a thinner luxury tail.</li>
+        <li><strong>Sizes:</strong> total area clusters around ~100 m²; heavy right tail with large outliers prior to cleaning.</li>
+        <li><strong>USD/m²:</strong> bulk between ~1,000 and 5,000 USD/m², median near ~2,000 USD/m²; outliers on both ends before cleaning.</li>
+      </ul>
+
+      <h3>KPI Highlights by Borough</h3>
+      <ul>
+        <li><strong>Highest USD/m²:</strong> Miguel Hidalgo (~2,580 USD/m²) and Cuajimalpa (~2,220 USD/m²), reflecting premium zones like Polanco and Santa Fe.</li>
+        <li><strong>Second tier:</strong> Benito Juárez (~1,580), Cuauhtémoc (~1,130), Álvaro Obregón (~1,100) with strong central demand.</li>
+        <li><strong>Mid-range:</strong> Coyoacán, Magdalena Contreras, Tlalpan show moderate medians with wider dispersion.</li>
+        <li><strong>More affordable:</strong> Iztapalapa, Tláhuac, Gustavo A. Madero around ~600–660 USD/m².</li>
+      </ul>
+
+      <h3>Geospatial View</h3>
+      <p>
+        An interactive <em>leaflet</em> map colors listings by log(USD/m²), enabling inspection of local clusters and anomalies. 
+        Several misclassified points (e.g., borough mismatches at specific size–price pairs) were corrected or removed to improve spatial integrity.
+      </p>
+
+      <h3>Modeling</h3>
+      <p>
+        A linear model on log-price (<code>log(price_usd)</code>) with predictors <code>log(surface_total_in_m2)</code>, <code>covered_ratio</code>, <code>property_type</code>, and <code>places</code> quantifies elasticities and location effects. 
+        Size has a positive elasticity with diminishing returns (log–log), while borough and property type explain substantial residual variation.
+      </p>
+
+      <h3>Results</h3>
+      <ul>
+        <li>Cleaning reduced extreme skew: after removing unrealistic sizes, duplicate rows, and inconsistent price–size pairs, histograms and boxplots present compact, interpretable distributions.</li>
+        <li>Outlier review flagged ~130 contradictory cases; excluding them aligns USD/m² distributions and clarifies borough rankings.</li>
+        <li>Clear spatial segmentation emerges: premium corridors in the west/center vs. more affordable eastern and southern boroughs.</li>
+      </ul>
+
+      <h3>Key Learnings</h3>
+      <ul>
+        <li>Domain-aware rules (e.g., covered ≤ total, practical size floors) are essential before statistical outliering.</li>
+        <li>Log-scaling is crucial for heavy-tailed real estate variables (price, area, USD/m²) to reveal structure.</li>
+        <li>Borough fixed effects matter: location shifts dominate after controlling for size and coverage.</li>
+        <li>Interactive maps accelerate anomaly detection and geocleaning versus charts alone.</li>
+      </ul>
+
+      <h3>Resources</h3>
+      <ul>
+        <li>Code: R with tidyverse, janitor, ggplot2, patchwork, leaflet, broom, dplyr, scales, htmltools.</li>
+        <li>Artifacts: histograms/boxplots (log scale), borough KPI table &amp; ranking chart, interactive leaflet map, baseline log-price model summary.</li>
+      </ul>
+
+    </section>
+  </div>
+</div>
+
+</body>
+</html>
